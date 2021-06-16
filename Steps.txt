@@ -1,0 +1,24 @@
+ctrl + shit + botao direito 
+opcao abrir power shell na pasta
+
+na pasta raiz, fora da solucao
+git clone https://github.com/adrianozovka/RestWithASP-NET5Udemy.git
+
+cd RestWithASP-NET5Udemy
+
+dotnet new sln -o RestWithASP-NET5Udemy
+
+dotnet new webapi -o RestWithASP-NET5Udemy
+
+dotnet sln add .\RestWithASP-NET5Udemy\
+
+
+abrindo com git bash na pasta raiz
+git add .gitignore
+git commit -m 'Adding gitignore'
+
+adicionado a pasta toda
+git add 00_RestWithASP-NET5Udemy_ScaffoldViaTerminal
+
+git commit -m 'Scaffolding webpai via terminal'
+
