@@ -1,22 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using RestWithASP_NET5Udemy.Model.Context;
 using RestWithASP_NET5Udemy.Business;
 using RestWithASP_NET5Udemy.Business.Implementations;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using RestWithASP_NET5Udemy.Repository;
-using RestWithASP_NET5Udemy.Repository.Implementations;
 using Serilog;
 using RestWithASP_NET5Udemy.Repository.Generic;
 
@@ -56,8 +50,6 @@ namespace RestWithASP_NET5Udemy
             }
 
             services.AddApiVersioning();
-
-            services.AddScoped<IPersonRepository, PersonRepositoryImplementation>();
 
             services.AddScoped<IPersonBusiness, PersonBusinessmplementation>();
             
