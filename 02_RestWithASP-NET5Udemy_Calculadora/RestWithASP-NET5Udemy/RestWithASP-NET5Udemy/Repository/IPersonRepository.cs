@@ -1,9 +1,9 @@
 ﻿using RestWithASP_NET5Udemy.Model;
 using System.Collections.Generic;
 
-namespace RestWithASP_NET5Udemy.Services
+namespace RestWithASP_NET5Udemy.Repository
 {
-    public interface IPersonService
+    public interface IPersonRepository
     {
 
         Person Create(Person person);
@@ -15,6 +15,8 @@ namespace RestWithASP_NET5Udemy.Services
         Person FindByID(long id);
 
         void Delete(long id);
+
+        bool Exists(long id);
 
     }
 }
